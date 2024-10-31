@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Public Speaking - Corso Online</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+        <!-- Hero Section -->
+        <header class="hero">
+            
+            <div class="hero-content">
+                <h1>Diventa un Oratore Straordinario</h1>
+                <p class="subtitle">Impara l'arte del public speaking con i migliori esperti del settore</p>
+                <button class="cta-button">Inizia la Prova Gratuita di 30 Giorni</button>
+            </div>
+        </header>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <i class="icon-video"></i>
+            <h3>Lezioni Online</h3>
+            <p>Accesso illimitato a video lezioni professionali</p>
+        </div>
+        <div class="feature-card">
+            <i class="icon-download"></i>
+            <h3>Guide Scaricabili</h3>
+            <p>Materiale didattico completo sempre a disposizione</p>
+        </div>
+        <div class="feature-card">
+            <i class="icon-chat"></i>
+            <h3>Supporto in Chat</h3>
+            <p>Docenti madrelingua sempre disponibili</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <h2>Inizia Oggi</h2>
+        <div class="price-card">
+            <h3>Abbonamento Mensile</h3>
+            <div class="price">€14,90<span>/mese</span></div>
+            <ul>
+                <li>Accesso completo alle lezioni</li>
+                <li>Guide scaricabili</li>
+                <li>Supporto chat 24/7</li>
+                <li>1 mese di prova gratuita</li>
+            </ul>
+            <button class="cta-button">Attiva la Prova Gratuita</button>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>Cosa Dicono i Nostri Studenti</h2>
+        <div class="testimonials-container">
+            <div class="testimonial">
+                <div class="rating">★★★★★</div>
+                <p>"Ho migliorato notevolmente le mie capacità di parlare in pubblico. Consigliatissimo!"</p>
+                <div class="author">Marco B. - Manager</div>
+            </div>
+            <div class="testimonial">
+                <div class="rating">★★★★★</div>
+                <p>"Docenti preparati e sempre disponibili. Un corso che vale ogni centesimo."</p>
+                <div class="author">Laura T. - Imprenditrice</div>
+            </div>
+            <div class="testimonial">
+                <div class="rating">★★★★★</div>
+                <p>"Finalmente ho superato la paura di parlare in pubblico. Grazie!"</p>
+                <div class="author">Giuseppe R. - Libero Professionista</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form con integrazione GetResponse -->
+    <section class="contact">
+        <h2>Inizia Ora il Tuo Percorso</h2>
+        <form id="contactForm" class="contact-form" method="POST" action="https://app.getresponse.com/add_subscriber.html">
+            <!-- Campo nascosto per la Campaign Token di GetResponse -->
+            <input type="hidden" name="campaign_token" value="INSERISCI_QUI_IL_TUO_TOKEN" />
+            <!-- Campo nascosto per la pagina di conferma -->
+            <input type="hidden" name="thankyou_url" value="https://tuodominio.com/grazie.html"/>
+            
+            <div class="form-group">
+                <input type="text" id="nome" name="first_name" required placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <input type="text" id="cognome" name="last_name" required placeholder="Cognome">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="Email">
+            </div>
+            <!-- Campo per il consenso GDPR -->
+            <div class="form-group consent">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">Acconsento al trattamento dei dati personali e all'invio di comunicazioni marketing</label>
+            </div>
+            <button type="submit" class="cta-button">Inizia la Prova Gratuita</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">MasterSpeak</div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Termini e Condizioni</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/script/app.js"></script>
+</body>
+</html>
