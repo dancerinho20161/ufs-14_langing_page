@@ -74,25 +74,15 @@
         </div>
     </section>
 
-    <!-- Contact Form con integrazione GetResponse -->
-    <section class="contact">
-        <h2>Inizia Ora il Tuo Percorso</h2>
-        <form id="contactForm" class="contact-form" method="POST" action="https://app.getresponse.com/add_subscriber.html">
-            <!-- Campo nascosto per la Campaign Token di GetResponse -->
-            <input type="hidden" name="campaign_token" value="jAQIqN" />
-            
-            <div class="form-group">
-                <input type="text" id="nome" name="first_name" required placeholder="Nome">
-            </div>
-            <div class="form-group">
-                <input type="email" id="email" name="email" required placeholder="Email">
-            </div>
-            <!-- Campo per il consenso GDPR -->
-            <div class="form-group consent">
-                <input type="checkbox" id="consent" name="consent" required>
-                <label for="consent">Acconsento al trattamento dei dati personali e all'invio di comunicazioni marketing</label>
-            </div>
-            <button type="submit" class="cta-button">Inizia la Prova Gratuita</button>
+    <!-- Contact Form -->
+    <section class="form-section">
+        <h2>Accedi alla prova gratuita di 1 mese</h2>
+        <form action="https://app.getresponse.com/add_subscriber.html" method="POST" accept-charset="utf-8">
+            <input type="text" name="name" placeholder="Il tuo nome" required>
+            <input type="email" name="email" placeholder="La tua email" required>
+            <input type="hidden" name="campaign_token" value="jAQIq">
+            <input type="hidden" name="start_day" value="0">
+            <input type="submit" value="Iscriviti">
         </form>
     </section>
 
